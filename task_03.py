@@ -19,7 +19,8 @@ if BASE == 'seattle gray':
             print ACCENT
             print HIGHLIGHT
     elif ACCENT == 'cumulus nimbus':
-        HIGHLIGHT = raw_input('Do you prefer Basically White or White?').lower()
+        HIGHLIGHT = raw_input('Do you prefer Basically White or 
+        White?').lower()
         if HIGHLIGHT == 'basically white':
             print BASE
             print ACCENT
