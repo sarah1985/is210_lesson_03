@@ -19,7 +19,7 @@ if BASE == 'seattle gray':
             print ACCENT
             print HIGHLIGHT
     elif ACCENT == 'cumulus nimbus':
-        HIGHLIGHT = raw_input('Do you prefer Basically White or
+        HIGHLIGHT = raw_input('Do you prefer Basically White or\
         White?').lower()
         if HIGHLIGHT == 'basically white':
             print BASE
@@ -29,7 +29,7 @@ if BASE == 'seattle gray':
             print BASE
             print ACCENT
             print HIGHLIGHT
-elif BASE == 'Manatee':
+elif BASE == 'manatee':
     ACCENT = raw_input('Do you prefer Platinum Mist or Spartan Sage?').lower()
     if ACCENT == 'platinum mist':
         HIGHLIGHT = raw_input('Do you prefer Bone White or Just White?').lower()
