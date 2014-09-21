@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Task 05: Compound Examples"""
 
-from decimal import *
+from decimal import Decimal
 import locale
 locale.setlocale(locale.LC_ALL, '')
 NAME = raw_input('What is your name?')
@@ -14,46 +14,46 @@ INT = 0
 if 0 <= PRINCIPAL <= 199999:
 	if 1 <= TERM <= 15:
 		if PRE_QUAL == 'Yes':
-			INT = Decimal(0.0363)
+			INT = Decimal('0.0363')
 		else:
-			INT = Decimal(0.0465)
+			INT = Decimal('0.0465')
 	elif 15 < TERM <= 20:
 		if PRE_QUAL == 'Yes':
-			INT = Decimal(0.0404)
+			INT = Decimal('0.0404')
 		else:
-			INT = Decimal(0.0498)
+			INT = Decimal('0.0498')
 	elif 20 < TERM <= 30:
 		if PRE_QUAL == 'Yes':
-			INT = Decimal(0.0577)
+			INT = Decimal('0.0577')
 		else:
-			INT = Decimal(0.0639)
+			INT = Decimal('0.0639')
 if 200000 <= PRINCIPAL <= 999999:
 	if 1 <= TERM <= 15:
 		if PRE_QUAL == 'Yes': 
-			INT = Decimal(0.0302)
+			INT = Decimal('0.0302')
 		else:
-			INT = Decimal(0.0398)
+			INT = Decimal('0.0398')
 	elif 15 < TERM <= 20:
 		if PRE_QUAL == 'Yes':
-			INT = Decimal(0.0327)
+			INT = Decimal('0.0327')
 		else:
-			INT = Decimal(0.0408)
+			INT = Decimal('0.0408')
 	elif 20 < TERM <= 30:
 		if PRE_QUAL == 'Yes':
-			INT = Decimal(0.0466)
+			INT = Decimal('0.0466')
 		else:
 			INT = NULL
 			print 'None'
 if PRINCIPAL > 1000000:
 	if 1 <= TERM <= 15:
 		if PRE_QUAL == 'Yes':
-			INT = Decimal(0.0205)
+			INT = Decimal('0.0205')
 		else:
 			INT = NULL
 			print 'None'
 	elif 15 < TERM <= 20:
 		if PRE_QUAL == 'Yes':
-			INT = Decimal(0.0262)
+			INT = Decimal('0.0262')
 		else:
 			INT = NULL
 			print 'None'
