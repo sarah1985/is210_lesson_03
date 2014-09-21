@@ -29,7 +29,7 @@ if 0 <= PRINCIPAL <= 199999:
             INT = Decimal('0.0639')
 if 200000 <= PRINCIPAL <= 999999:
     if 1 <= TERM <= 15:
-        if PRE_QUAL == 'Yes': 
+        if PRE_QUAL == 'Yes':
             INT = Decimal('0.0302')
         else:
             INT = Decimal('0.0398')
@@ -55,10 +55,10 @@ if PRINCIPAL > 1000000:
         else:
             INT = None
 
-if INT != None:
-    TOTAL = round(PRINCIPAL * (1 + (INT/12))**(12 * TERM))
-else:
+if INT is None:
     TOTAL = 0
+else:
+    TOTAL = round(PRINCIPAL * (1 + (INT/12))**(12 * TERM))
 
 REPORT = '''
 Loan Report for: {0}
