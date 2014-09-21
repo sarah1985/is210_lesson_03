@@ -12,9 +12,9 @@ elif BP_INPUT > 90 and BP_INPUT <= 119:
     BP_STATUS = 'ideal'
 elif BP_INPUT > 119 and BP_INPUT <= 139:
     BP_STATUS = 'warning'
-elif BP_INPUT > 139 and BP_INPUT <= 160:
+elif BP_INPUT > 139 and BP_INPUT < 160:
     BP_STATUS = 'high'
-elif BP_INPUT > 160:
+elif BP_INPUT >= 160:
     BP_STATUS = 'emergency'
 
 print'Hello, your blood pressure status is {}.'.format(BP_STATUS)
