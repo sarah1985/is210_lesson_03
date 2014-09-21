@@ -4,7 +4,7 @@
 
 BASE = raw_input('Do you prefer Seattle Gray or Manatee?').lower()
 ACCENT = 0
-HIGHLIGHT = 0 
+HIGHLIGHT = 0
 
 if BASE == 'seattle gray':
 	ACCENT = raw_input('Do you prefer Ceramic Glaze or Cumulus Nimbus?').lower()

@@ -6,7 +6,7 @@ from decimal import Decimal
 import locale
 locale.setlocale(locale.LC_ALL, '')
 NAME = raw_input('What is your name?')
-PRINCIPAL = int(raw_input('What is the amount of your principal (the amount being borrowed)?'))
+PRINCIPAL = int(raw_input('What is the amount of your principal?'))
 TERM = int(raw_input('For how many years is this loan being borrowed?'))
 PRE_QUAL = raw_input('Are you pre-qualified for this loan?')
 INT = 0
@@ -42,20 +42,20 @@ if 200000 <= PRINCIPAL <= 999999:
 		if PRE_QUAL == 'Yes':
 			INT = Decimal('0.0466')
 		else:
-			INT = NULL
+			INT = None
 			print 'None'
 if PRINCIPAL > 1000000:
 	if 1 <= TERM <= 15:
 		if PRE_QUAL == 'Yes':
 			INT = Decimal('0.0205')
 		else:
-			INT = NULL
+			INT = None
 			print 'None'
 	elif 15 < TERM <= 20:
 		if PRE_QUAL == 'Yes':
 			INT = Decimal('0.0262')
 		else:
-			INT = NULL
+			INT = None
 			print 'None'
 
 TOTAL = round(PRINCIPAL * (1 + (INT/12))**(12 * TERM))
