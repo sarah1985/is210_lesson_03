@@ -67,7 +67,7 @@ Loan Report for: {0}
     Duration:        {2:>15}
     Pre-qualified?   {3:>15}
     
-    Total:           {4:>15}'''.format(NAME, locale.currency(PRINCIPAL, grouping=True), 
-str(TERM) + 'yrs', PRE_QUAL, locale.currency(TOTAL, grouping=True))
+    Total:           {4:>15}'''.format(NAME, locale.currency(PRINCIPAL,
+grouping=True), str(TERM) + 'yrs', PRE_QUAL, locale.currency(TOTAL, grouping=True))
 
 print REPORT
