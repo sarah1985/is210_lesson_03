@@ -8,5 +8,3 @@ SNOOZE = 'Snooze'
 
 SNOOZE if DAY == ('saturday', 'sunday') else TIME < 0600
 print 'SNOOZE'
-
-#x if c else y
