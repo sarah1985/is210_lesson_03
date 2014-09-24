@@ -5,10 +5,13 @@
 BASE = raw_input('Do you prefer Seattle Gray or Manatee?').lower()
 
 if BASE == 'seattle gray':
-    ACCENT = raw_input('Do you prefer Ceramic Glaze or Cumulus Nimbus?').lower()
+    ACCENT = raw_input(
+    'Do you prefer Ceramic Glaze or Cumulus Nimbus?'
+).lower()
     if ACCENT == 'ceramic glaze':
-        HIGHLIGHT = raw_input('Do you prefer Basically White or White?'
-                                ).lower()
+        HIGHLIGHT = raw_input(
+        'Do you prefer Basically White or White?'
+).lower()
         if HIGHLIGHT == 'basically white':
             print BASE.title()
             print ACCENT.title()
@@ -18,8 +21,9 @@ if BASE == 'seattle gray':
             print ACCENT.title()
             print HIGHLIGHT.title()
     elif ACCENT == 'cumulus nimbus':
-        HIGHLIGHT = raw_input('Do you prefer Basically White or White?'
-                                ).lower()
+        HIGHLIGHT = raw_input(
+        'Do you prefer Basically White or White?'
+).lower()
         if HIGHLIGHT == 'basically white':
             print BASE.title()
             print ACCENT.title()
@@ -29,10 +33,13 @@ if BASE == 'seattle gray':
             print ACCENT.title()
             print HIGHLIGHT.title()
 elif BASE == 'manatee':
-    ACCENT = raw_input('Do you prefer Platinum Mist or Spartan Sage?').lower()
+    ACCENT = raw_input(
+	'Do you prefer Platinum Mist or Spartan Sage?'
+).lower()
     if ACCENT == 'platinum mist':
-        HIGHLIGHT = raw_input('Do you prefer Bone White or Just White?'
-                                ).lower()
+        HIGHLIGHT = raw_input(
+        'Do you prefer Bone White or Just White?'
+).lower()
         if HIGHLIGHT == 'bone white':
             print BASE.title()
             print ACCENT.title()
@@ -42,8 +49,9 @@ elif BASE == 'manatee':
             print ACCENT.title()
             print HIGHLIGHT.title()
     elif ACCENT == 'spartan sage':
-        HIGHLIGHT = raw_input('Do you prefer Fractal White or Not White?'
-                                ).lower()
+        HIGHLIGHT = raw_input(
+        'Do you prefer Fractal White or Not White?'
+).lower()
         if HIGHLIGHT == 'fractal white':
             print BASE.title()
             print ACCENT.title()
