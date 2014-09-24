@@ -12,6 +12,8 @@ PRE_QUAL = raw_input('Are you pre-qualified for this loan?')
 PREQUAL_BOOL = True if PRE_QUAL[:1].lower() == 'y' else False
 RATE = 0
 
+if PRINCIPAL < 0:
+    PREQUAL_BOOL = False
 if 0 <= PRINCIPAL < 200000:
     if 1 <= TERM <= 15:
         if PREQUAL_BOOL:
