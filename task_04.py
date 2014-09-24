@@ -7,7 +7,7 @@ TIME = int(raw_input('What time is it? (e.g. 2300)'))
 
 SNOOZE = True if DAY == 'sat' or DAY == 'sun' or TIME < 600 else False
 
-if SNOOZE == True:
+if SNOOZE:
     print 'Snooze'
 else:
     print 'Wake up!'
