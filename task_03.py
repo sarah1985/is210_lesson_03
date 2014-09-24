@@ -34,7 +34,7 @@ if BASE == 'seattle gray':
             print HIGHLIGHT.title()
 elif BASE == 'manatee':
     ACCENT = raw_input(
-	'Do you prefer Platinum Mist or Spartan Sage?'
+    'Do you prefer Platinum Mist or Spartan Sage?'
 ).lower()
     if ACCENT == 'platinum mist':
         HIGHLIGHT = raw_input(
